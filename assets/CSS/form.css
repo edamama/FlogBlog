@@ -1,0 +1,127 @@
+body{
+
+    background-color: rgb(193, 229, 193);
+
+}
+
+#header{
+
+    display:flex;
+    flex-wrap: wrap;
+    height: 150px;
+
+}
+
+#logo{
+
+    border: solid;
+    border-color: rgb(249, 249, 22);
+    
+    scale:80%;
+    float:left;
+    
+
+}
+
+#welcomeMessage{
+
+    background-color: white;
+    width:800px;
+    height: 80px;
+    text-align: center;
+    border:solid;
+    border-radius: 30px;
+    padding:10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+
+#flogFriend{
+
+    display:flex;
+
+    border:solid;
+    border-color: yellow;
+    
+    scale:50%;
+    
+    
+
+    margin-left: auto;
+    margin-right: auto;
+
+    transform: translateY(-350px);
+
+    justify-content: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 850px){
+
+    #welcomeMessage{
+    
+        width:90%;
+        font-size: 16px;
+
+    }
+
+    #logo{
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+   #flogFriend{
+
+        scale:45%
+
+   }
+
+}
+    
+@media screen and (max-width: 450px){
+
+    #welcomeMessage{
+
+        font-size: 14px;
+
+    }
+
+    #flogFriend{
+
+        scale:35%;
+        transform: translateY(-600px);
+
+    }
+
+    #logo{
+
+        scale:70%;
+
+    }
+
+}
