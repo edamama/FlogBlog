@@ -23,9 +23,9 @@
     
     <div id ="welcomeMessage">
 
-        <p><strong> Welcome to FlogBlog! To get started, follow the steps below! When you're finished, 
+        <p><strong> Welcome to FlogBlog! To get started, follow the steps you see here! When you're finished, 
             
-            be sure to press the pencil! </strong></p>
+            be sure to click the pencil below! </strong></p>
 
     </div>
 
@@ -43,8 +43,15 @@
             <h1 class="dot"> 1 </h1>
 
             <h1 class ="prompt">What's your username?</h1>
+            
+            <div id="tagAndPrompt">
 
-            <img src>
+                <img id = "tag" src="imgAssets/nameTag.png">
+
+                <input id="firstEntry" type = "text" placeholder ="Type your name here!">
+
+            </div>
+            
 
         </div>
 
@@ -53,7 +60,17 @@
 
             <h1 class="dot"> 2 </h1>
 
-            <h1 class="prompt">Enter a title for this entry</h1>            
+            <h1 class="prompt">Enter a title for this entry</h1> 
+
+            <div id="bookAndPrompt">
+
+                <img id="book" src="imgAssets/book.png">
+
+                <input id="secondEntry" type="text" placeholder="Type the title here!">
+
+            </div>
+            
+            
 
         </div>
 
@@ -63,6 +80,26 @@
             <h1 class="dot"> 3 </h1>
 
             <h1 class="prompt">Write your blog's contents</h1>
+
+            <div id="bubblePromptSubmit">
+
+                <form>
+                    
+                    <img id ="speechBubble" src="imgAssets/speechBubble.png">
+                    
+                    <textarea id="contentEntryBox" name="message" rows="10" cols="30" placeholder="What's your story?"></textarea>
+                  
+                </form>
+
+            </div>
+
+            <div id="pencilSubmitBtn">
+
+                <img id="pencilImg" src="imgAssets/pencil.png">
+
+                <input id="submitBtn" type="submit" value="Proceed to blog!">
+    
+            </div>
 
         </div>
 

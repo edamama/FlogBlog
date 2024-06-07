@@ -14,8 +14,6 @@ body{
 
 #logo{
 
-    border: solid;
-    border-color: rgb(249, 249, 22);
     
     scale:80%;
     float:left;
@@ -45,8 +43,7 @@ body{
 
     display:flex;
 
-    border:solid;
-    border-color: yellow;
+   
     
     scale:50%;
     
@@ -68,6 +65,7 @@ body{
     width:600px;
     height:600px;
     margin: 10px;
+    border-radius: 30px;
 
 }
 
@@ -75,6 +73,8 @@ body{
 
     display: flex;
     justify-content: space-between;
+    
+    
     
     transform: translateY(-350px);
 
@@ -118,17 +118,151 @@ body{
 
 }
 
+#tagAndPrompt{
+
+    scale:70%;
+    justify-content: center;
+    transform:translateY(-150px)
+
+}
+
+#firstEntry{
+
+    transform:translateY(-300px);
+    
+    font-size: 48px;
+    font-family: cursive;
+    border: none;
+
+    width:500px;
+
+    background-color: white;
+
+    margin-left: 40px;
+    margin-right:40px;
+
+    text-align: center;
+    outline:none;
+
+}
 
 
+#bookAndPrompt{
+
+    justify-content: center;
+
+}
+
+#book{
+
+    transform:translateX(80px);
+
+}
+
+#secondEntry{
+
+    transform:translateY(-325px);
+    margin-left: 230px;
+
+    height:100px;
+    width:190px;
+    
+    text-align: center;
+
+    font-size: x-large;
+
+    background-color: #e95e64;
+    color:brown;
+
+    border:none;
+    outline:none;
+
+    font-family:fantasy;
+
+}
+
+#secondEntry::placeholder{
+
+    color:brown;
+
+}
+
+#bubblePromptSubmit{
+
+    justify-content: center;
+    scale:70%;
+
+    transform: translateY(-200px);
+    
+
+}
+
+#contentEntryBox{
+
+    width:600px;
+    height:300px;
+    
+    transform: translateX(70px);
+    transform:translateY(-565px);
+
+    outline:none;
+    border:none;
+
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    
+
+}
 
 
+#speechBubble{
 
+    transform: translateX(-7px);
 
+}
 
+#pencilSubmitBtn{
+    
+    justify-content: center;
+    transform:translateY(-700px)
+
+}
+
+#pencilImg{
+
+    transform: rotate(-90deg);
+    scale:90%;
+
+}
+
+#submitBtn{
+
+    width:300px;
+    height:100px;
+
+    font-size: 30pt;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    background-color: #e95e64;
+    border:none;
+
+    transform: translateY(-355px);
+    margin-left: 130px;
+    
+}
+
+#submitBtn:hover{
+
+    color:olive;
+    cursor: pointer;
+
+}
 
 /* media query */
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1800px){
 
     #welcomeMessage{
     
