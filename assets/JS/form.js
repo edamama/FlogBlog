@@ -4,11 +4,25 @@ let usernameEl = document.getElementById("firstEntry");
 let titleEl = document.getElementById("secondEntry");
 let blogContentEl = document.getElementById("thirdEntry");
 
+/*let postObj = {
+
+    Username: "",
+    
+    Title: "",
+
+    BlogContent:"" 
+
+}*/
+
+let postObjArray = JSON.parse(localStorage.getItem("Entry")) || [];
+
+
+
 submitButtonEl.addEventListener("click", function(event){
 
     if(usernameEl.value && titleEl.value && blogContentEl.value){
         
-        let postObj = {
+        const postObj = {
 
             Username: "",
             
@@ -24,7 +38,11 @@ submitButtonEl.addEventListener("click", function(event){
         
         let stringifiedPostObj = JSON.stringify(postObj);
 
-        localStorage.setItem("Entry", stringifiedPostObj);
+        postObjArray.push(stringifiedPostObj);
+        localStorage.setItem("Entry", JSON.stringify(postObjArray));
+
+        
+
         
     } else{
 
