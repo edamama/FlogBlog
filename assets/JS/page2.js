@@ -42,12 +42,9 @@ lightSwitchEl.addEventListener("click",function(){
 
 /////////////////////////////////////////////////////////////////////////////////
 
-// need to destringify
+let newObject = JSON.parse((localStorage.getItem("Entry")));
 
-
-
-
-
+// Syntax to get specific item in object should be console.log(JSON.parse(newObject[0]).BlogContent); or something like that
 
 
 

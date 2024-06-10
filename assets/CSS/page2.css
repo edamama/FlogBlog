@@ -8,6 +8,7 @@ header{
 
     display: flex;
     justify-content:center;
+    height:250px;
 
 }
 
@@ -111,14 +112,44 @@ header{
 
 
 
+.usernameTitleBoxes{
+
+    width:400px;
+    height:100px;
+    text-align: center;
+    border:solid;
+    border-radius: 30px;
+    line-height: 100px;
+
+    background-color: #e95e64;
+    border-color: rgba(60, 3, 3, 0.219);
+    margin-top: 100px;
+
+}
 
 
 
+#contentDisplay{
+
+    width:800px;
+    height:500px;
+    text-align: center;
+    border:solid;
+    border-radius: 30px;
+    line-height: 100px;
+
+    background-color: #e95e64;
+    border-color: rgba(60, 3, 3, 0.219);
+
+}
 
 
+#postDisplay{
 
+    display: flex;
+    justify-content: space-around
 
-
+}
 
 
 
@@ -143,6 +174,29 @@ header{
 
 
 /*media queries*/
+
+@media screen and (max-width:1200px) {
+
+    #postDisplay{
+
+        flex-direction: column;
+
+    }
+
+    #usernameAndTitle{
+
+        justify-content: center;
+
+    }
+
+    #contentSection{
+
+        align-content: center;
+
+    }
+    
+}
+
 
 @media screen and (max-width:1100px){
 
