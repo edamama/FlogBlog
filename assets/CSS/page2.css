@@ -122,7 +122,21 @@ header{
 
 
 
+#footer{
 
+    display:flex;
+    justify-content: center;
+
+    background-color:rgba(4, 72, 3, 0.408);
+
+    width: auto;
+    height:50px;
+    
+    position:sticky;
+
+    transform: translateY(1000px);
+
+}
 
 
 

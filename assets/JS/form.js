@@ -16,25 +16,21 @@ let blogContentEl = document.getElementById("thirdEntry");
 
 let postObjArray = JSON.parse(localStorage.getItem("Entry")) || [];
 
-
-
 submitButtonEl.addEventListener("click", function(event){
 
     if(usernameEl.value && titleEl.value && blogContentEl.value){
         
         const postObj = {
 
-            Username: "",
+            Username: usernameEl.value,
             
-            Title: "",
+            Title: titleEl.value,
         
-            BlogContent:"" 
+            BlogContent: blogContentEl.value , 
         
         }
         
-        postObj.Username = usernameEl.value;
-        postObj.Title = titleEl.value;
-        postObj.BlogContent = blogContentEl.value;
+        
         
         let stringifiedPostObj = JSON.stringify(postObj);
 

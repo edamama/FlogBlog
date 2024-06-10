@@ -2,6 +2,7 @@
 
 let lightSwitchEl = document.getElementById("lightSwitch");
 let lightNightImgEl = document.getElementById("lightNightImg");
+let footerEl = document.getElementById("footer");
 
 let mode = "light";
 
@@ -19,6 +20,8 @@ lightSwitchEl.addEventListener("click",function(){
 
         lightSwitchEl.setAttribute("style","background-color:rgba(1, 29, 1, 0.00)");
 
+        footerEl.setAttribute("style","background-color:rgba(5, 51, 4, 0.408)");
+
 
 
     } else{
@@ -29,8 +32,52 @@ lightSwitchEl.addEventListener("click",function(){
 
         lightNightImgEl.src = "imgAssets/lightmode.png";
 
-        lightSwitchEl.setAttribute("style","background-color:rgb(193, 229, 193);")
+        lightSwitchEl.setAttribute("style","background-color:rgb(193, 229, 193);");
+
+        footerEl.setAttribute("style","background-color: background-color:rgba(4, 72, 3, 0.408);")
 
     }
 
 });
+
+/////////////////////////////////////////////////////////////////////////////////
+
+// need to destringify
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////footer
+
+let linkBtnEl = document.getElementById("linkBtn");
+
+linkBtnEl.addEventListener("click", function(){
+
+    document.location.href ="https://edamama.github.io/portfolio/";
+
+})
