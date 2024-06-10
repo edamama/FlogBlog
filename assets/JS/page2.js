@@ -3,6 +3,8 @@
 let lightSwitchEl = document.getElementById("lightSwitch");
 let lightNightImgEl = document.getElementById("lightNightImg");
 let footerEl = document.getElementById("footer");
+let userTitleBoxEl = document.querySelector("usernameTitleBoxes");
+let contentDisplayEl = document.getElementById("contentDisplay");
 
 let mode = "light";
 
@@ -20,7 +22,7 @@ lightSwitchEl.addEventListener("click",function(){
 
         lightSwitchEl.setAttribute("style","background-color:rgba(1, 29, 1, 0.00)");
 
-        footerEl.setAttribute("style","background-color:rgba(5, 51, 4, 0.408)");
+
 
 
 
@@ -82,7 +84,34 @@ for(let i = 0; i < newObject.length ; i++ ){
     
     addElements();
 
-}
+    if(i === newObject.length-1){
+
+        function addFooter(){
+
+            let newFooter = document.createElement("footer");
+            newFooter.setAttribute("id","footer");
+            document.body.appendChild(newFooter);
+
+            let newButton = document.createElement("button");
+            newButton.setAttribute("id","linkBtn");
+            newButton.textContent = "Click to visit my portfolio!"
+            newFooter.appendChild(newButton);
+
+        }
+
+        addFooter();
+        
+        let linkBtnEl = document.getElementById("linkBtn");
+
+        linkBtnEl.addEventListener("click", function(){
+
+            document.location.href ="https://edamama.github.io/portfolio/";
+
+            });
+
+    }
+
+};
 
 
 
@@ -107,10 +136,3 @@ for(let i = 0; i < newObject.length ; i++ ){
 
 /////////////////////////////////////footer
 
-let linkBtnEl = document.getElementById("linkBtn");
-
-linkBtnEl.addEventListener("click", function(){
-
-    document.location.href ="https://edamama.github.io/portfolio/";
-
-})

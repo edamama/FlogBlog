@@ -119,11 +119,13 @@ header{
     text-align: center;
     border:solid;
     border-radius: 30px;
-    line-height: 100px;
+    align-content: center;
+
 
     background-color: #e95e64;
     border-color: rgba(60, 3, 3, 0.219);
-    margin-top: 100px;
+    margin-top: 50px;
+    
 
 }
 
@@ -132,14 +134,29 @@ header{
 #contentDisplay{
 
     width:800px;
-    height:500px;
+    height:300px;
     text-align: center;
+    align-content: center;
     border:solid;
     border-radius: 30px;
-    line-height: 100px;
+    font-size: 20pt;
+   
+    
+    
 
     background-color: #e95e64;
     border-color: rgba(60, 3, 3, 0.219);
+    padding:10px;
+    
+
+}
+
+
+#contentSection{
+
+    display: flex;
+    justify-content: center;
+    
 
 }
 
@@ -148,25 +165,40 @@ header{
 
     display: flex;
     justify-content: space-around;
-    margin-bottom: 70px;
+    margin-bottom: 150px;
+    
 
 }
 
+
+#usernameAndTitle{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
 
 
 #footer{
 
     display:flex;
-    justify-content: center;
-
+    
     background-color:rgba(4, 72, 3, 0.408);
 
-    width: auto;
     height:50px;
-    
-    position:sticky;
 
-    transform: translateY(1000px);
+    justify-content: center;
+   
+
+}
+
+#linkBtn{
+
+    background-color: rgba(0, 128, 0, 0.255);
+    border:none;
+    border-radius: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 
 }
 
@@ -179,22 +211,21 @@ header{
 @media screen and (max-width:1200px) {
 
     #postDisplay{
-
+        
         flex-direction: column;
-
-    }
-
-    #usernameAndTitle{
-
         justify-content: center;
+        transform: translateY(-100px);
 
     }
 
-    #contentSection{
+    .usernameTitleBoxes{
 
-        align-content: center;
+       margin-left: auto;
+       margin-right:auto;
 
     }
+
+    
     
 }
 
@@ -203,26 +234,27 @@ header{
 
    header{
 
-        justify-content: center;
-        scale:65%;
-        margin-top:-120px;
+        scale:80%;
+        
 
    }
 
-   #posts{
-
-    width:100px;
-
-   }
+   
 
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:850px){
+
+    body{
+
+        transform: translateY(-50px);
+
+    }
 
     header{
 
         scale:35%;
-        margin-top:-200px;
+       
 
     }
 
@@ -231,39 +263,71 @@ header{
         scale:200%;
     
        }
+
+    .usernameTitleBoxes{
+
+        scale:70%;
+        margin-top:-20px;
+
+    }
+
+    #usernameAndTitle{
+
+        margin-bottom:20px;
+
+    }
+ 
+    #contentDisplay{
+
+      scale:70%;
+      transform: translateY(-150px);
+
+    }
+
+  
+
+   #postDisplay{
+
+    transform:translateY(-80px);
+    margin-bottom: -50px;
+
+   }
 
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:450px){
 
-    header{
 
-        scale:30%;
-        margin-top:-220px;
+.usernameTitleBoxes{
 
-    }
-
-    #posts{
-
-        scale:200%;
-    
-       }
+    scale:30%;
+    margin-top:-70px;
+    transform: translateX(-60px);
 
 }
 
-@media screen and (max-width:325px){
+header{
 
-    header{
+    scale:30%;
 
-        scale:25%;
-        margin-top:-240px;
+}
 
-    }
+#contentDisplay{
 
-    #posts{
+   width:600px;
+   height:200px;
 
-        scale:200%;
-    
-       }
+}
+
+#postDisplay{
+
+    transform: translateY(-50px);
+
+}
+
+
+
+
+
 
 }
