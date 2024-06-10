@@ -147,7 +147,8 @@ header{
 #postDisplay{
 
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    margin-bottom: 70px;
 
 }
 

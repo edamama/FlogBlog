@@ -44,9 +44,45 @@ lightSwitchEl.addEventListener("click",function(){
 
 let newObject = JSON.parse((localStorage.getItem("Entry")));
 
-// Syntax to get specific item in object should be console.log(JSON.parse(newObject[0]).BlogContent); or something like that
+// Syntax to get specific item in object should be console.log(JSON.parse(newObject[0]).BlogContent); or something like that.
 
+for(let i = 0; i < newObject.length ; i++ ){
 
+    function addElements(){
+
+        let newPostDiv = document.createElement("div");
+        newPostDiv.setAttribute("id","postDisplay");
+        document.body.appendChild(newPostDiv);
+    
+        let newTitleAndAuthorDiv = document.createElement("div");
+        newTitleAndAuthorDiv.setAttribute("id", "usernameAndTitle");
+        newPostDiv.appendChild(newTitleAndAuthorDiv);
+    
+        let titleBox = document.createElement("h1");
+        titleBox.setAttribute("class","usernameTitleBoxes");
+        titleBox.textContent = JSON.parse(newObject[i]).Title;
+        newTitleAndAuthorDiv.appendChild(titleBox);
+    
+        let userBox = document.createElement("h1");
+        userBox.setAttribute("class","usernameTitleBoxes");
+        userBox.textContent = "By " + JSON.parse(newObject[i]).Username;
+        newTitleAndAuthorDiv.appendChild(userBox);
+    
+        let newContentDiv = document.createElement("div");
+        newContentDiv.setAttribute("id","contentSection");
+        newPostDiv.appendChild(newContentDiv);
+    
+        let newContentDisplay = document.createElement("h1");
+        newContentDisplay.setAttribute("id","contentDisplay");
+        newContentDisplay.textContent = JSON.parse(newObject[i]).BlogContent;
+        newContentDiv.appendChild(newContentDisplay);
+    
+    
+    }
+    
+    addElements();
+
+}
 
 
 
