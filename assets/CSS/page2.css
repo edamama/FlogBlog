@@ -8,7 +8,8 @@ header{
 
     display: flex;
     justify-content:center;
-    height:250px;
+    height:300px;
+   
 
 }
 
@@ -140,7 +141,7 @@ header{
     border:solid;
     border-radius: 30px;
     font-size: 20pt;
-   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
     
 
@@ -165,7 +166,7 @@ header{
 
     display: flex;
     justify-content: space-around;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
     
 
 }
@@ -176,6 +177,7 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    transform: translateY(-20px);
 
 }
 
@@ -281,6 +283,7 @@ header{
 
       scale:70%;
       transform: translateY(-150px);
+      
 
     }
 
@@ -316,6 +319,7 @@ header{
 
    width:600px;
    height:200px;
+   font-size: 14pt;
 
 }
 
@@ -326,7 +330,12 @@ header{
 }
 
 
+body{
 
+    transform: translateX(-5px);
+    transform: translateY(-100px);
+
+}
 
 
 
