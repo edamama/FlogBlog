@@ -1,4 +1,4 @@
-This is FlogBlog. A easily accessible place for you to have a collection of your personal diary entries. All you have to do is provide a username, title, and anything you wish to write. Please enjoy the service!
+This is FlogBlog--An easily accessible place for you to have a collection of your personal diary entries. All you have to do is provide a username, title, and anything you wish to write. Please enjoy the service!
 ---------------------------------------
 GO TO FLOGBLOG: https://edamama.github.io/FlogBlog/
 --------------------------------------------------------
